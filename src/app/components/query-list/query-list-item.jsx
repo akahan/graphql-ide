@@ -44,7 +44,7 @@ export default () => {
                     onClick={this.handleClick}
                 >
                     <div className="QueryListItem__Icon">
-                        <div className="Icon">
+                        <div className={cn("Icon", this.props.shortname)}>
                             <span>
                                 {this.props.shortname}
                             </span>

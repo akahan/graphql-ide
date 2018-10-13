@@ -46,7 +46,8 @@ export default () => {
             onEditVariables: PropTypes.func,
             onEditOperationName: PropTypes.func,
             onToggleDocs: PropTypes.func,
-            getDefaultFieldNames: PropTypes.func
+            getDefaultFieldNames: PropTypes.func,
+            onRunQuery: PropTypes.func,
         }
 
         componentDidMount() {
@@ -89,7 +90,7 @@ export default () => {
                                     value={this.props.query}
                                     onEdit={this.handleEditQuery}
                                     onHintInformationRender={this.handleHintInformationRender}
-                                    onRunQuery={() => null}
+                                    onRunQuery={this.props.onRunQuery}
                                 />
                                 <div className="variable-editor" style={variableStyle}>
                                     <div
@@ -106,7 +107,7 @@ export default () => {
                                         variableToType={this.props.variableToType}
                                         onEdit={this.handleEditVariables}
                                         onHintInformationRender={this.handleHintInformationRender}
-                                        onRunQuery={() => null}
+                                        onRunQuery={this.props.onRunQuery}
                                     />
                                 </div>
                             </div>
@@ -122,6 +123,7 @@ export default () => {
                                         this.resultComponent = c;
                                     }}
                                     value={this.props.response}
+                                    onRunQuery={this.props.onRunQuery}
                                 />
                             </div>
                         </div>

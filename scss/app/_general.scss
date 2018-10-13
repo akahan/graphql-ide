@@ -58,3 +58,13 @@ body {
     border-color: red;
   }
 }
+
+.QueryListItem__Icon {
+  .Icon.mu {
+    background-color: $mu-color;
+  }
+
+  .Icon.qu {
+    background-color: $qu-color;
+  }
+}

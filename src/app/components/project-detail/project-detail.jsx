@@ -319,7 +319,7 @@ export default ({store, actionCreators, selectors, queries, factories, history, 
                             >
                                 <QueryList
                                     data={this.props.project.get('queries')}
-                                    rowHeight={72}
+                                    rowHeight={62}
                                     activeId={activeTab && activeTab.get('queryId')}
                                     onItemClick={this.handleQueryClick}
                                     onItemRemove={this.handleQueryRemove}
@@ -401,6 +401,7 @@ export default ({store, actionCreators, selectors, queries, factories, history, 
                                         projectId={this.props.project.get('id')}
                                         queryId={this.props.project.getIn(['activeTab', 'queryId'])}
                                         onClose={this.handleRightPanelClose}
+                                        onRunQuery={this.handleEditorRunQuery}
                                     />
                                 )}
                                 {(rightPanel === 'DOCUMENTATION') && (

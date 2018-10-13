@@ -3,12 +3,16 @@
 
 $theme-color: lighten($brand-primary, 5%);
 $text-color: lighten($brand-primary, 40%);
+$font-size-base: 12px;
 $text-color-active: #a1c3ed;
 $border-color: #545454;
 $background-color: #282828;
 $background-active-color: #3a4961;
 $header-background-color: lighten($background-color, 2%);
 $editor-background-color: darken($background-color, 3%);
+
+$mu-color: #365410;
+$qu-color: #b97242;
 
 $input-color-placeholder: $gray-light;
 $input-bg-disabled: lighten($background-color, 3%);
